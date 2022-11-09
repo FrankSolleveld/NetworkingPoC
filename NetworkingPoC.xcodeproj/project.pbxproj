@@ -12,19 +12,11 @@
 		95A16B29291BAA450018536F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A16B28291BAA450018536F /* Assets.xcassets */; };
 		95A16B2C291BAA450018536F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A16B2B291BAA450018536F /* Preview Assets.xcassets */; };
 		95A16B36291BAA450018536F /* NetworkingPoCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A16B35291BAA450018536F /* NetworkingPoCTests.swift */; };
-		95A16B40291BAA450018536F /* NetworkingPoCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A16B3F291BAA450018536F /* NetworkingPoCUITests.swift */; };
-		95A16B42291BAA450018536F /* NetworkingPoCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A16B41291BAA450018536F /* NetworkingPoCUITestsLaunchTests.swift */; };
+		95A16B50291BCEE00018536F /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A16B4E291BCECB0018536F /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		95A16B32291BAA450018536F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 95A16B19291BAA430018536F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 95A16B20291BAA430018536F;
-			remoteInfo = NetworkingPoC;
-		};
-		95A16B3C291BAA450018536F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95A16B19291BAA430018536F /* Project object */;
 			proxyType = 1;
@@ -41,9 +33,7 @@
 		95A16B2B291BAA450018536F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95A16B31291BAA450018536F /* NetworkingPoCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingPoCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A16B35291BAA450018536F /* NetworkingPoCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingPoCTests.swift; sourceTree = "<group>"; };
-		95A16B3B291BAA450018536F /* NetworkingPoCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingPoCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95A16B3F291BAA450018536F /* NetworkingPoCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingPoCUITests.swift; sourceTree = "<group>"; };
-		95A16B41291BAA450018536F /* NetworkingPoCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingPoCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95A16B4E291BCECB0018536F /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A16B38291BAA450018536F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +59,6 @@
 			children = (
 				95A16B23291BAA430018536F /* NetworkingPoC */,
 				95A16B34291BAA450018536F /* NetworkingPoCTests */,
-				95A16B3E291BAA450018536F /* NetworkingPoCUITests */,
 				95A16B22291BAA430018536F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +68,6 @@
 			children = (
 				95A16B21291BAA430018536F /* NetworkingPoC.app */,
 				95A16B31291BAA450018536F /* NetworkingPoCTests.xctest */,
-				95A16B3B291BAA450018536F /* NetworkingPoCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +77,7 @@
 			children = (
 				95A16B24291BAA430018536F /* NetworkingPoCApp.swift */,
 				95A16B26291BAA430018536F /* ContentView.swift */,
+				95A16B4E291BCECB0018536F /* URLProtocolMock.swift */,
 				95A16B28291BAA450018536F /* Assets.xcassets */,
 				95A16B2A291BAA450018536F /* Preview Content */,
 			);
@@ -116,15 +98,6 @@
 				95A16B35291BAA450018536F /* NetworkingPoCTests.swift */,
 			);
 			path = NetworkingPoCTests;
-			sourceTree = "<group>";
-		};
-		95A16B3E291BAA450018536F /* NetworkingPoCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				95A16B3F291BAA450018536F /* NetworkingPoCUITests.swift */,
-				95A16B41291BAA450018536F /* NetworkingPoCUITestsLaunchTests.swift */,
-			);
-			path = NetworkingPoCUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +138,6 @@
 			productReference = 95A16B31291BAA450018536F /* NetworkingPoCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		95A16B3A291BAA450018536F /* NetworkingPoCUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95A16B4B291BAA450018536F /* Build configuration list for PBXNativeTarget "NetworkingPoCUITests" */;
-			buildPhases = (
-				95A16B37291BAA450018536F /* Sources */,
-				95A16B38291BAA450018536F /* Frameworks */,
-				95A16B39291BAA450018536F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				95A16B3D291BAA450018536F /* PBXTargetDependency */,
-			);
-			name = NetworkingPoCUITests;
-			productName = NetworkingPoCUITests;
-			productReference = 95A16B3B291BAA450018536F /* NetworkingPoCUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +152,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					95A16B30291BAA450018536F = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 95A16B20291BAA430018536F;
-					};
-					95A16B3A291BAA450018536F = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = 95A16B20291BAA430018536F;
 					};
@@ -221,7 +172,6 @@
 			targets = (
 				95A16B20291BAA430018536F /* NetworkingPoC */,
 				95A16B30291BAA450018536F /* NetworkingPoCTests */,
-				95A16B3A291BAA450018536F /* NetworkingPoCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +193,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A16B39291BAA450018536F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A16B27291BAA430018536F /* ContentView.swift in Sources */,
+				95A16B50291BCEE00018536F /* URLProtocolMock.swift in Sources */,
 				95A16B25291BAA430018536F /* NetworkingPoCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,15 +214,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A16B37291BAA450018536F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				95A16B40291BAA450018536F /* NetworkingPoCUITests.swift in Sources */,
-				95A16B42291BAA450018536F /* NetworkingPoCUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +221,6 @@
 			isa = PBXTargetDependency;
 			target = 95A16B20291BAA430018536F /* NetworkingPoC */;
 			targetProxy = 95A16B32291BAA450018536F /* PBXContainerItemProxy */;
-		};
-		95A16B3D291BAA450018536F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 95A16B20291BAA430018536F /* NetworkingPoC */;
-			targetProxy = 95A16B3C291BAA450018536F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -507,42 +437,6 @@
 			};
 			name = Release;
 		};
-		95A16B4C291BAA450018536F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2BRJ7L3SUQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.solleveld.NetworkingPoCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NetworkingPoC;
-			};
-			name = Debug;
-		};
-		95A16B4D291BAA450018536F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2BRJ7L3SUQ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.solleveld.NetworkingPoCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NetworkingPoC;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +463,6 @@
 			buildConfigurations = (
 				95A16B49291BAA450018536F /* Debug */,
 				95A16B4A291BAA450018536F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95A16B4B291BAA450018536F /* Build configuration list for PBXNativeTarget "NetworkingPoCUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				95A16B4C291BAA450018536F /* Debug */,
-				95A16B4D291BAA450018536F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
